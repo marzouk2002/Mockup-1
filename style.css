@@ -19,6 +19,7 @@ body {
   right: 0%;
   height: 90%;
   width: 56%;
+  min-width: 500px;
   z-index: -3;
 }
 .background-pa {
@@ -113,10 +114,12 @@ header {
   width: 10rem;
   justify-content: space-between;
   position: relative;
-  left: 3rem;
+  left: 5.4rem;
 }
 #menu {
   margin-right: 5%;
+  position: relative;
+  right: -1rem;
   display: flex;
 }
 #humbur {
@@ -142,10 +145,20 @@ header {
 #humbur::before {
   top: -7px;
 }
+#menucheck {
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  left: 3.4rem;
+  top: -0.2rem;
+  opacity: 0;
+  cursor: pointer;
+}
 main {
   display: grid;
-  grid-template-columns: 20vw 80vw;
+  grid-template-columns: 15vw 80vw;
   grid-template-rows: 100%;
+  grid-gap: 5vw;
 }
 #sections {
   display: flex;
@@ -159,21 +172,46 @@ main {
   margin-top: 1rem;
   font-size: 5rem;
 }
+.cursor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cursor > div {
+  margin: 1.2rem;
+  position: relative;
+  top: 2rem;
+  right: 4rem;
+  transform: rotate(-90deg);
+  opacity: 0.2;
+}
+.cursorfocus {
+  opacity: 1 !important;
+}
 footer {
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.8;
 }
 footer > section {
   display: flex;
-  margin: 4rem;
+  margin: 4rem 2.9rem 4rem 3rem;
 }
 footer > section > a {
   color: white;
 }
 svg {
+  margin: 0 0.4rem 0 0.4rem;
+}
+.mouse {
   position: relative;
   bottom: 2.1rem;
   left: -50%;
+  stroke-width: 7;
+}
+#mousediv {
+  margin-left: 9rem;
 }
