@@ -57,7 +57,7 @@ body {
 }
 .div1 {
   position: absolute;
-  width: 83.2%;
+  width: 82%;
   height: 5%;
   background-color: var(--background-secondary);
   top: 51.85%;
@@ -72,9 +72,9 @@ body {
   width: 35.7%;
   height: 5.2%;
   background-color: var(--background-secondary);
-  top: 42.8%;
+  top: 41%;
   left: 57.4%;
-  transform: rotate(-22deg) skew(20deg) perspective(100px) rotateX(-31deg);
+  transform: rotate(-25deg) skew(20deg) perspective(100px) rotateX(-31deg);
   box-shadow: 0 1.7rem var(--background-primary);
 }
 .div3 > div {
@@ -90,7 +90,7 @@ body {
   background-color: var(--background-primary);
   top: 45%;
   left: 65.8%;
-  transform: skewY(22deg);
+  transform: skewY(24deg);
   clip-path: polygon(100% 0%, 100% 100%, 20% 100%);
 }
 .main {
@@ -179,7 +179,6 @@ header {
   transform-origin: 74% 30%;
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
-    5px -5px 5px #1c65c4;
 }
 #menucheck:checked + .menu-items {
   transform: scale(1);
@@ -222,7 +221,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 15vw 80vw;
+  grid-template-columns: 15% 80%;
   grid-template-rows: 100%;
   grid-gap: 5vw;
 }
@@ -258,25 +257,28 @@ main {
 footer {
   margin-top: 3%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
   opacity: 0.8;
 }
 footer > section {
   display: flex;
-  margin: 4rem 2.9rem 4rem 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem rem;
 }
 footer > section > a {
   color: white;
 }
-svg {
-  margin: 0 0.4rem 0 0.4rem;
+i {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
 }
 .mouse {
   position: relative;
   bottom: 2.1rem;
   left: -50%;
-  stroke-width: 7;
 }
 #mousediv {
   margin-left: 9rem;
