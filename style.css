@@ -101,9 +101,10 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 12vh 73vh 15vh;
+  grid-template-rows: 12% 73% 15%;
   font-family: Roboto;
   color: white;
+  overflow: hidden;
 }
 header {
   grid-area: 1/1/2/2;
@@ -114,7 +115,9 @@ header {
 #nav {
   display: flex;
   grid-column-gap: 1rem;
-  width: 12rem;
+  width: 50%;
+  max-width: 12rem;
+  box-sizing: border-box;
   margin: auto;
 }
 
@@ -238,7 +241,7 @@ main {
 }
 #sections {
   overflow: auto;
-  margin-left: 8%;
+  margin-left: 4%;
 }
 
 #sections::-webkit-scrollbar {
@@ -259,6 +262,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 2rem;
 }
 .cursor > div {
   margin: 1rem;
@@ -269,6 +273,7 @@ main {
 }
 .curLink {
   text-decoration: none;
+  padding: 0.5rem 0.3rem;
   transition: color 0.2s ease-in-out;
   color: #666;
 }
