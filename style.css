@@ -288,9 +288,12 @@ main {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 5%;
   grid-template-rows: 100%;
   text-align: center;
+  box-sizing: border-box;
+  margin: 0 5%;
+  font-size: calc(0.3rem + 1.5vmin);
 }
 
 footer * {
@@ -301,20 +304,13 @@ footer > section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0rem;
-}
-
-footer > section:first-child {
-  margin-left: 1.5rem;
-}
-
-footer > section:last-child {
-  margin-right: 1.5rem;
+  margin: auto 0rem;
 }
 
 footer > section > a {
   color: #ccc;
 }
+
 i {
   margin-left: 0.7rem;
   font-size: 1.3rem;
@@ -323,7 +319,8 @@ i {
 .mouse {
   position: absolute;
   left: 50%;
-  bottom: 1.2rem;
+  top: -1.8rem;
+  transform: translate(-50%);
 }
 
 #mousediv {
